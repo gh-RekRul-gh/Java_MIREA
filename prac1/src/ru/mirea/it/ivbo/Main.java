@@ -1,4 +1,6 @@
-package ru.mirea.ivbo.lab1;
+package ru.mirea.it.ivbo;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -24,7 +26,9 @@ public class Main {
 
     public static int sum(int[] arr) {
         int ans = 0;
-        for (int i : arr) { ans += i; }
+        for (int i : arr) {
+            ans += i;
+        }
         return ans;
     }
 
@@ -70,7 +74,8 @@ public class Main {
         // начало пункта 6
         System.out.println("Here 6th item starts");
         for (int i = 1; i <= 10; ++i) {
-            System.out.println("Harmonic number with number " + i + " is " + (double) 1/i);
+            System.out.print("Harmonic number with number " + i + " is ");
+            System.out.printf("%.5f%n", (double) 1 / i);
         }
         // конец пункта 6
 
