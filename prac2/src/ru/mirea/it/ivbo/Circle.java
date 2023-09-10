@@ -4,6 +4,13 @@ public class Circle {
     private double radius = 0;
     private final double pi = 3.1415926535;
 
+    public int compareToAnother(Circle another) {
+        if (this.getRadius() < another.getRadius())
+            return 1;
+        else if (this.getRadius() > another.getRadius())
+            return 2;
+        return 3;
+    }
     public Circle() {
     }
 

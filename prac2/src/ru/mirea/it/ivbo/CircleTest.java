@@ -3,14 +3,6 @@ package ru.mirea.it.ivbo;
 import java.util.Scanner;
 
 public class CircleTest {
-    public static int compareCircles(Circle circle1, Circle circle2) {
-        if (circle1.getRadius() < circle2.getRadius())
-            return 1;
-        else if (circle1.getRadius() > circle2.getRadius())
-            return 2;
-        return 3;
-    }
-
     public static void main(String[] args) {
         System.out.println("Enter the radius of the first circle");
         Scanner scanner = new Scanner(System.in);
@@ -23,8 +15,8 @@ public class CircleTest {
         circle2.setRadius(radius2);
         System.out.println("Area of the circle2 is " + circle2.area());
         System.out.println("Circumference of the circle2 is " + circle2.circumference());
-        int result_of_comparing = compareCircles(circle1, circle2);
-        switch (result_of_comparing) {
+        int resultOfComparing = circle1.compareToAnother(circle2);
+        switch (resultOfComparing) {
             case 1 -> System.out.println("Circle1 is smaller than circle2");
             case 2 -> System.out.println("Circle1 is bigger than circle2");
             case 3 -> System.out.println("Circle1 is equal to circle2");
