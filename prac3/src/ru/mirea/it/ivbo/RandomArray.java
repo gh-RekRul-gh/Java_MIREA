@@ -2,8 +2,6 @@ package ru.mirea.it.ivbo;
 
 import java.util.Random;
 
-import java.util.Scanner;
-
 import java.util.Arrays;
 
 public class RandomArray {
