@@ -2,7 +2,7 @@ package ru.mirea.it.ivbo;
 
 public class Circle {
     private double radius = 0;
-    private double pi = 3.1415926535;
+    private final double pi = 3.1415926535;
 
     public Circle() {
     }
