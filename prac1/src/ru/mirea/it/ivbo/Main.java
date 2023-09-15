@@ -4,62 +4,64 @@ import java.util.Scanner;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
-    private static int min(int[] arr) {
-        if (arr.length == 0) return -1;
-        int ans = arr[0];
-        for (int i = 1; i < arr.length; ++i) {
-            ans = Math.min(ans, arr[i]);
+    private static int min(int[] array) {
+        if (array.length == 0)
+            return -1;
+        int ans = array[0];
+        for (int i = 1; i < array.length; ++i) {
+            ans = Math.min(ans, array[i]);
         }
         return ans;
     }
 
-    private static int max(int[] arr) {
-        if (arr.length == 0) return -1;
-        int ans = arr[0];
-        for (int i = 1; i < arr.length; ++i) {
-            ans = Math.max(ans, arr[i]);
+    private static int max(int[] array) {
+        if (array.length == 0)
+            return -1;
+        int answer = array[0];
+        for (int i = 1; i < array.length; ++i) {
+            answer = Math.max(answer, array[i]);
         }
-        return ans;
+        return answer;
     }
 
-    public static int sum(int[] arr) {
-        int ans = 0;
-        for (int i : arr) {
-            ans += i;
+    public static int sum(int[] array) {
+        int answer = 0;
+        for (int i : array) {
+            answer += i;
         }
-        return ans;
+        return answer;
     }
 
     public static long factorial(int n) {
-        long ans = 1;
+        long answer = 1;
         for (int i = 2; i <= n; ++i) {
-            ans *= i;
+            answer *= i;
         }
-        return ans;
+        return answer;
     }
 
     public static void main(String[] args) {
         // начало пункта 3
         System.out.println("Here 3rd item starts");
-        int[] arr = {3, 7, 4, 8, 121, 14, -5};
-        int su = sum(arr);
-        System.out.println("Average is " + (double) su / arr.length);
+        int[] array = {3, 7, 4, 8, 121, 14, -5};
+        int su = sum(array);
+        System.out.println("Average is " + (double) su / array.length);
         // конец пункта 3
 
         // начало пункта 4
         System.out.println("Here 4th item starts");
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the size of the array");
-        int size = sc.nextInt();
-        int[] arr1 = new int[size];
-        int num = 0;
-        while (num < size) {
-            arr1[num] = sc.nextInt();
-            num++;
+        int size = scanner.nextInt();
+        int[] array1 = new int[size];
+        int index = 0;
+        while (index < size) {
+            array1[index] = scanner.nextInt();
+            index++;
         }
-        System.out.println("Sum of array is " + sum(arr1));
-        System.out.println("Max number in the array is " + max(arr1));
-        System.out.println("Min number in the array is " + min(arr1));
+        System.out.println("Sum of array is " + sum(array1));
+        System.out.println("Max number in the array is " + max(array1));
+        System.out.println("Min number in the array is " + min(array1));
         // конец пункта 4
 
         // начало пункта 5
@@ -80,7 +82,7 @@ public class Main {
         // начало пункта 7
         System.out.println("Here 7th item starts");
         System.out.println("Enter the factorial number you want to get");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         System.out.println(factorial(n));
         // конец пункта 7
     }
