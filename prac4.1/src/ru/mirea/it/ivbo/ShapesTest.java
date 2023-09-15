@@ -6,7 +6,7 @@ public class ShapesTest {
         Circle circle = new Circle(5.34);
         Square square = new Square(3.356);
         rectangle.setFirstSide(0.55);
-        rectangle.setSecondSide(1.33);
+        rectangle.setSecondSide(1.34);
         System.out.println("Rectangle's first side is " + rectangle.getFirstSide() +
                 " and its second side is " + rectangle.getSecondSide());
         circle.setRadius(3.33);
