@@ -14,7 +14,6 @@ public class ReverseArray {
             elemNumber++;
         }
 
-
         for (int i = 0; i < elemNumber / 2; ++i) {
             String temp = array[i];
             array[i] = array[elemNumber - i - 1];
