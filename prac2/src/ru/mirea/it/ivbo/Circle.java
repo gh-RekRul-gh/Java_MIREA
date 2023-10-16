@@ -2,7 +2,6 @@ package ru.mirea.it.ivbo;
 
 public class Circle {
     private double radius = 0;
-    private final double pi = 3.1415926535;
 
     public int compareToAnother(Circle another) {
         if (this.getRadius() < another.getRadius())
@@ -27,7 +26,7 @@ public class Circle {
     }
 
     public double area() {
-        return pi * radius * radius;
+        return Math.PI * radius * radius;
     }
 
     public double circumference() {
