@@ -13,6 +13,5 @@ public class From1ToN {
             return;
         System.out.println(current);
         printNumbers(n, current + 1);
-        return;
     }
 }
