@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class WithoutTwoZeros {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter numbers A and B");
+        System.out.println("""
+        This application counts number of sequences with A zeros and B ones
+        Enter numbers A and B""");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        System.out.println("Number of sequences with " + a + " zeros and " + b + "ones is " +
+        System.out.println("Number of sequences with " + a + " zeros and " + b + " ones is " +
                 countSequences(a, b, true));
     }
 
