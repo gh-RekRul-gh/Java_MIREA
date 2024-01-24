@@ -1,20 +1,4 @@
-# So, it is Java in *RTU MIREA* <br>
-<br>
-This repository has some practice tasks I have done within the discipline so . . . <br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
+# Практические работы по дисциплине Java 3его семестра
 
-# Enjoy
+Практические задания выполнялись поначалу практически без знания устройства самого языка, <br>
+А язык познавался мною по ходу выполнения работ, а впоследствии во время подготовки к экзамену
